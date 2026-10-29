@@ -132,15 +132,15 @@ def answer_compliance_query(
             rule_lines.append(f"• **{r.rule_code}** ({status_tag}): {r.title} [Clause: {r.clause_reference}]")
             citations.append({"rule": r.rule_code, "clause": r.clause_reference})
         response_content = (
-            "Active regulatory compliance rules currently configured in SmartComply 360:\n\n"
+            "Active regulatory compliance rules currently configured in SmartComply AI:\n\n"
             + "\n".join(rule_lines)
-            + "\n\n*Notice: SmartComply 360 strictly delineates officially verified AICTE norms from mock demonstration parameters.*"
+            + "\n\n*Notice: SmartComply AI strictly delineates officially verified AICTE norms from mock demonstration parameters.*"
         )
 
     # General Fallback
     else:
         response_content = (
-            f"Hello {user.full_name}. I am your **AICTE SmartComply 360 Compliance Copilot**.\n\n"
+            f"Hello {user.full_name}. I am your **AICTE SmartComply AI Compliance Copilot**.\n\n"
             "I can assist you with:\n"
             "• Checking missing or conflicting application documents\n"
             "• Explaining why specific compliance findings or SFR deficits were flagged\n"

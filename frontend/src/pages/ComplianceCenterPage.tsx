@@ -111,7 +111,7 @@ export const ComplianceCenterPage: React.FC = () => {
       <div className="p-3.5 rounded-xl bg-slate-900 dark:bg-slate-950 text-white text-xs flex items-start space-x-3 shadow-sm border border-slate-800">
         <ShieldCheck className="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0" />
         <div className="leading-relaxed text-slate-300">
-          <strong className="text-white">Statutory Governance Boundary:</strong> SmartComply 360 strictly distinguishes between officially verified AICTE Handbook clauses and demo parameters. The calculated readiness score reflects adherence to configured rules and is <em>never equivalent to official AICTE approval or rejection</em>.
+          <strong className="text-white">Statutory Governance Boundary:</strong> SmartComply AI strictly distinguishes between officially verified AICTE Handbook clauses and demo parameters. The calculated readiness score reflects adherence to configured rules and is <em>never equivalent to official AICTE approval or rejection</em>.
         </div>
       </div>
 

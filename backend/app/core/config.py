@@ -4,7 +4,7 @@ from typing import Optional
 try:
     from pydantic_settings import BaseSettings
     class Settings(BaseSettings):
-        PROJECT_NAME: str = os.getenv("PROJECT_NAME", "AICTE SmartComply 360")
+        PROJECT_NAME: str = os.getenv("PROJECT_NAME", "AICTE SmartComply AI")
         VERSION: str = os.getenv("VERSION", "1.0.0")
         API_V1_STR: str = os.getenv("API_V1_STR", "/api/v1")
         DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./smartcomply.db")
@@ -19,7 +19,7 @@ try:
         BACKEND_CORS_ORIGINS: str = os.getenv("BACKEND_CORS_ORIGINS", "*")
 except ImportError:
     class Settings:
-        PROJECT_NAME: str = os.getenv("PROJECT_NAME", "AICTE SmartComply 360")
+        PROJECT_NAME: str = os.getenv("PROJECT_NAME", "AICTE SmartComply AI")
         VERSION: str = os.getenv("VERSION", "1.0.0")
         API_V1_STR: str = os.getenv("API_V1_STR", "/api/v1")
         DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./smartcomply.db")

@@ -30,7 +30,7 @@ export const LoginPage: React.FC = () => {
     setSubmitting(true);
     try {
       await login(email, password);
-      showToast('Welcome to SmartComply 360', 'Authenticated successfully', 'success');
+      showToast('Welcome to SmartComply AI', 'Authenticated successfully', 'success');
       navigate('/');
     } catch (err: any) {
       setError(err.message || 'Authentication failed');

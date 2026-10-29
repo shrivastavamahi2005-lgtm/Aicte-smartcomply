@@ -43,10 +43,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ collapsed = false, mobileOpen 
           {!collapsed && (
             <div className="min-w-0">
               <span className="font-bold text-sm tracking-tight text-white block truncate">
-                AICTE SmartComply
+                AICTE SmartComply AI
               </span>
-              <span className="text-[10px] font-medium tracking-wider text-blue-400 uppercase block -mt-0.5">
-                360 Approval Suite
+              <span className="text-[10px] font-semibold tracking-wider text-blue-400 uppercase block -mt-0.5">
+                Approval & Audit Suite
               </span>
             </div>
           )}

@@ -1,7 +1,7 @@
 export const resources = {
   en: {
     translation: {
-      appName: "AICTE SmartComply 360",
+      appName: "AICTE SmartComply AI",
       appTagline: "Predict, Trace & Resolve",
       brandSubtitle: "Approval Automation & Regulatory Compliance Monitoring",
       nav: {
@@ -125,7 +125,7 @@ export const resources = {
   },
   hi: {
     translation: {
-      appName: "एआईसीटीई स्मार्टकम्प्लाई 360",
+      appName: "एआईसीटीई स्मार्टकम्प्लाई एआई",
       appTagline: "अनुमान, ट्रेस और समाधान",
       brandSubtitle: "अनुमोदन स्वचालन और नियामक अनुपालन निगरानी प्रणाली",
       nav: {
@@ -249,7 +249,7 @@ export const resources = {
   },
   bn: {
     translation: {
-      appName: "এআইসিটিই স্মার্টকমপ্লাই ৩৬০",
+      appName: "এআইসিটিই স্মার্টকমপ্লাই এআই",
       appTagline: "পূর্বাভাস, ট্র্যাকিং ও সমাধান",
       brandSubtitle: "অনুমোদন স্বয়ংক্রিয়করণ ও নিয়ন্ত্রক সম্মতি নিরীক্ষণ ব্যবস্থা",
       nav: {
@@ -373,7 +373,7 @@ export const resources = {
   },
   mr: {
     translation: {
-      appName: "एआयसीटीई स्मार्टकम्प्लाय ३६०",
+      appName: "एआयसीटीई स्मार्टकम्प्लाय एआय",
       appTagline: "अंदाज, मागोवा आणि निराकरण",
       brandSubtitle: "मंजुरी ऑटोमेशन आणि नियामक अनुपालन देखरेख प्रणाली",
       nav: {
@@ -497,7 +497,7 @@ export const resources = {
   },
   gu: {
     translation: {
-      appName: "એઆઈસીટીઈ સ્માર્ટકમ્પ્લાય ૩૬૦",
+      appName: "એઆઈસીટીઈ સ્માર્ટકમ્પ્લાય એઆઈ",
       appTagline: "અનુમાન, ટ્રેસ અને નિરાકરણ",
       brandSubtitle: "મંજૂરી ઓટોમેશન અને નિયમનકારી અનુપાલન મોનિટરિંગ સિસ્ટમ",
       nav: {
@@ -621,7 +621,7 @@ export const resources = {
   },
   ta: {
     translation: {
-      appName: "ஏஐசிடிஇ ஸ்மார்ட்கம்ப்ளை 360",
+      appName: "ஏஐசிடிஇ ஸ்மார்ட்கம்ப்ளை ஏஐ",
       appTagline: "கணிப்பு, கண்டறிதல் & தீர்வு",
       brandSubtitle: "ஒப்புதல் தானியக்கமாக்கல் & ஒழுங்குமுறை இணக்க கண்காணிப்பு அமைப்பு",
       nav: {
@@ -745,7 +745,7 @@ export const resources = {
   },
   te: {
     translation: {
-      appName: "ఏఐసీటీఈ స్మార్ట్‌కంప్లై 360",
+      appName: "ఏఐసీటీఈ స్మార్ట్‌కంప్లై ఏఐ",
       appTagline: "అంచనా, ట్రేస్ & పరిష్కారం",
       brandSubtitle: "ఆమోదం ఆటోమేషన్ & నియంత్రణ సమ్మతి పర్యవేక్షణ వ్యవస్థ",
       nav: {

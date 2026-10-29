@@ -1,4 +1,4 @@
-# AICTE SmartComply 360
+# AICTE SmartComply AI
 ### Integrated AICTE Approval Workflow Automation, Compliance Monitoring & Alert Management System
 **Predict, Trace & Resolve**
 
@@ -10,7 +10,7 @@
 
 ## 1. Executive Summary & Architecture
 
-**AICTE SmartComply 360** transforms the traditional, document-heavy technical education regulatory approval lifecycle into an automated, explainable, transparent digital cockpit. Built on an enterprise SaaS paradigm, the platform features multi-role role-based access control (RBAC), PDF/image extraction pipelines with SHA-256 integrity tracking, a versioned compliance rule engine adhering to the official AICTE Approval Process Handbook (APH 2024-27), cross-document inconsistency detection, an interactive dependency graph, an explainable deadline risk engine, dynamic dark/light/system theme switching, multilingual i18n support across 7 Indian national languages, and an AI regulatory copilot with offline deterministic fallback.
+**AICTE SmartComply AI** transforms the traditional, document-heavy technical education regulatory approval lifecycle into an automated, explainable, transparent digital cockpit. Built on an enterprise SaaS paradigm, the platform features multi-role role-based access control (RBAC), PDF/image extraction pipelines with SHA-256 integrity tracking, a versioned compliance rule engine adhering to the official AICTE Approval Process Handbook (APH 2024-27), cross-document inconsistency detection, an interactive dependency graph, an explainable deadline risk engine, dynamic dark/light/system theme switching, multilingual i18n support across 7 Indian national languages, and an AI regulatory copilot with offline deterministic fallback.
 
 ```mermaid
 graph TD
@@ -204,19 +204,19 @@ Follow these beginner-friendly steps to upload this project to GitHub.
 
 4. Commit the files:
    ```bash
-   git commit -m "Initial commit: AICTE SmartComply 360 full-stack prototype"
+   git commit -m "Initial commit: AICTE SmartComply AI full-stack prototype"
    ```
 
 5. Create a new repository on [GitHub](https://github.com/new) named:
    ```
-   aicte-smartcomply-360
+   Aicte-smartcomply
    ```
    *(Select **Public** or **Private**, do not check "Initialize with README" as we already have one).*
 
 6. Link your local project to GitHub and push:
    ```bash
    git branch -M main
-   git remote add origin https://github.com/YOUR_GITHUB_USERNAME/aicte-smartcomply-360.git
+   git remote add origin https://github.com/shrivastavamahi2005-lgtm/Aicte-smartcomply.git
    git push -u origin main
    ```
 
@@ -225,7 +225,7 @@ Follow these beginner-friendly steps to upload this project to GitHub.
 1. Download and install [GitHub Desktop](https://desktop.github.com/).
 2. Click **File** &rarr; **Add Local Repository...** and select this project folder (`SIH PROTOTYPE`).
 3. Click **Publish repository** to GitHub.
-4. Set the name as `aicte-smartcomply-360` and click **Publish**.
+4. Set the name as `Aicte-smartcomply` and click **Publish**.
 
 ---
 
@@ -242,7 +242,7 @@ Follow these beginner-friendly steps to upload this project to GitHub.
 ### Step 2: Deploy Backend to Render (Free Web Service)
 1. Sign in to [Render](https://render.com/).
 2. Click **New +** &rarr; **Web Service**.
-3. Connect your GitHub repository: `aicte-smartcomply-360`.
+3. Connect your GitHub repository: `Aicte-smartcomply`.
 4. Configure service settings:
    - **Name:** `aicte-smartcomply-backend`
    - **Root Directory:** `backend`
@@ -262,7 +262,7 @@ Follow these beginner-friendly steps to upload this project to GitHub.
 ### Step 3: Deploy Frontend to Vercel
 1. Sign in to [Vercel](https://vercel.com/).
 2. Click **Add New...** &rarr; **Project**.
-3. Import the `aicte-smartcomply-360` repository.
+3. Import the `Aicte-smartcomply` repository.
 4. In the Project Configuration:
    - **Framework Preset:** `Vite`
    - **Root Directory:** Click "Edit" and choose `frontend`
@@ -273,7 +273,7 @@ Follow these beginner-friendly steps to upload this project to GitHub.
    - **Value:** `https://aicte-smartcomply-backend.onrender.com` *(your backend Render URL from Step 2)*
 6. Click **Deploy**.
 7. Vercel will build the frontend and issue a production HTTPS URL, e.g.:
-   `https://aicte-smartcomply-360.vercel.app`
+   `https://aicte-smartcomply-ai.vercel.app`
 
 ---
 
@@ -283,7 +283,7 @@ Follow these beginner-friendly steps to upload this project to GitHub.
 
 | Variable | Description | Default | Example for Production |
 | :--- | :--- | :--- | :--- |
-| `PROJECT_NAME` | Name displayed in docs | `AICTE SmartComply 360` | `AICTE SmartComply 360` |
+| `PROJECT_NAME` | Name displayed in docs | `AICTE SmartComply AI` | `AICTE SmartComply AI` |
 | `DATABASE_URL` | SQLAlchemy database URI | `sqlite:///./smartcomply.db` | `postgresql://user:pass@host:5432/db` |
 | `SECRET_KEY` | Salt/signature for JWT tokens | `aicte_smartcomply...` | Secure 64-hex string |
 | `ALGORITHM` | Cryptographic signing algorithm | `HS256` | `HS256` |
@@ -324,7 +324,7 @@ To ensure regulatory integrity, rules configured in the engine explicitly displa
 `frontend/vercel.json` contains a rewrite rule routing all paths to `index.html`. Ensure `vercel.json` is committed in your repository.
 
 #### 2. CORS error in browser console:
-Ensure your backend has `BACKEND_CORS_ORIGINS="*"` or includes your exact Vercel frontend URL (e.g. `https://aicte-smartcomply-360.vercel.app`).
+Ensure your backend has `BACKEND_CORS_ORIGINS="*"` or includes your exact Vercel frontend URL (e.g. `https://aicte-smartcomply-ai.vercel.app`).
 
 #### 3. Database connection fails with `postgres://`:
 Hosted providers often provide URIs starting with `postgres://`. The backend automatically converts this to `postgresql://` to comply with SQLAlchemy 2.0.
