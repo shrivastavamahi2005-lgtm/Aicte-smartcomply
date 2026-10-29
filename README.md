@@ -95,16 +95,18 @@ For Smart India Hackathon jury review, 5 pre-configured demonstration accounts a
 
 ```mermaid
 flowchart LR
-    Browser["User Browser (Desktop / Mobile)"]
-    Vercel["Frontend on Vercel CDN\n(React 18 + Vite SPA)"]
-    Backend["Backend on Render / Railway / VPS\n(FastAPI + PyMuPDF + Uvicorn)"]
-    DB[(Hosted PostgreSQL\nSupabase / Neon / Render)]
-    Storage["Persistent Storage\n(Disk Volume / S3 / Supabase)"]
+    flowchart LR
+    Browser["User Browser - Desktop / Mobile"]
+    Vercel["Frontend on Vercel CDN - React 18 + Vite SPA"]
+    Backend["Backend on Render / Railway / VPS - FastAPI + PyMuPDF + Uvicorn"]
+    DB[("Hosted PostgreSQL - Supabase / Neon / Render")]
+    Storage["Persistent Storage - Disk Volume / S3 / Supabase"]
 
     Browser -->|HTTPS Request| Vercel
     Vercel -->|REST API with Bearer Token| Backend
     Backend -->|SQLAlchemy Connection Pool| DB
     Backend -->|PDF / Image Storage| Storage
+
 ```
 
 ### Why this architecture?
