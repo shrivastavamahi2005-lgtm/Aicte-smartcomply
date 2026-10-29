@@ -95,55 +95,16 @@ For Smart India Hackathon jury review, 5 pre-configured demonstration accounts a
 
 ```mermaid
 flowchart LR
- 
-    Browser["User Browser (Desktop / Mobile)"]
-    Vercel["Frontend on Vercel CDN\n(React 18 + Vite SPA)"]
-    Backend["Backend on Render / Railway / VPS\n(FastAPI + PyMuPDF + Uvicorn)"]
-    DB[("Hosted PostgreSQL\nSupabase / Neon / Render")]
-    flowchart LR
     Browser["User Browser - Desktop or Mobile"]
     Frontend["Frontend - React and Vite"]
     Backend["Backend - FastAPI and Uvicorn"]
-    DB[("PostgreSQL Database")]
-    flowchart LR
-    Browser["User Browser - Desktop or Mobile"]
-    Frontend["Frontend - React and Vite"]
-    Backend["Backend - FastAPI and Uvicorn"]
-    DB[("PostgreSQL Database")]
-    Storage["Persistent Storage - Disk Volume or S3"]
+    Database[("PostgreSQL Database")]
+    Storage["Persistent Document Storage"]
 
-    Browser -->|HTTPS Request| Frontend
+    Browser -->|HTTPS| Frontend
     Frontend -->|REST API| Backend
-    Backend -->|SQLAlchemy| DB
-    Backend -->|PDF and Image Storage| Storage
-
-    Browser -->|HTTPS Request| Frontend
-    Frontend -->|REST API| Backend
-    Backend -->|SQLAlchemy| DB
-    Backend -->|PDF and Image Storage| Storage
-
-    flowchart LR
-    Browser["User Browser - Desktop / Mobile"]
-    Vercel["Frontend on Vercel CDN - React 18 + Vite SPA"]
-    Backend["Backend on Render / Railway / VPS - FastAPI + PyMuPDF + Uvicorn"]
-    DB[("Hosted PostgreSQL - Supabase / Neon / Render")]
-   flowchart LR
-    Browser["User Browser - Desktop or Mobile"]
-    Frontend["Frontend - React and Vite"]
-    Backend["Backend - FastAPI and Uvicorn"]
-    DB[("PostgreSQL Database")]
-    Storage["Persistent Storage - Disk Volume or S3"]
-
-    Browser -->|HTTPS Request| Frontend
-    Frontend -->|REST API| Backend
-    Backend -->|SQLAlchemy| DB
-    Backend -->|PDF and Image Storage| Storage
-
-    Browser -->|HTTPS Request| Vercel
-    Vercel -->|REST API with Bearer Token| Backend
-    Backend -->|SQLAlchemy Connection Pool| DB
-    Backend -->|PDF / Image Storage| Storage
-
+    Backend -->|Database Connection| Database
+    Backend -->|PDF and Image Files| Storage
 ```
 
 ### Why this architecture?
