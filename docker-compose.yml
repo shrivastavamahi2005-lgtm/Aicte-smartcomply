@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - PROJECT_NAME=AICTE SmartComply 360
+      - DATABASE_URL=sqlite:///./smartcomply.db
+      - SECRET_KEY=aicte_smartcomply_360_sih_hackathon_super_secret_jwt_key
+      - BACKEND_CORS_ORIGINS=*
+      - AI_PROVIDER=mock
+    volumes:
+      - backend-uploads:/app/uploads
+      - backend-db:/app/smartcomply.db
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+volumes:
+  backend-uploads:
+  backend-db:
