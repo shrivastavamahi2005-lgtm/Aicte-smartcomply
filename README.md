@@ -35,8 +35,8 @@ graph TD
     end
 
     subgraph DataLayer ["Data & Storage Layer"]
-        DB[(SQLite Local / PostgreSQL Hosted via SQLAlchemy ORM)]
-        Files[Controlled Physical Document Vault (uploads/)]
+        DB[("SQLite Local / PostgreSQL Hosted via SQLAlchemy ORM")]
+        Files["Controlled Physical Document Vault (uploads/)"]
     end
 
     UI -->|JWT Bearer Authentication| Router
@@ -98,7 +98,7 @@ flowchart LR
     Browser["User Browser (Desktop / Mobile)"]
     Vercel["Frontend on Vercel CDN\n(React 18 + Vite SPA)"]
     Backend["Backend on Render / Railway / VPS\n(FastAPI + PyMuPDF + Uvicorn)"]
-    DB[(Hosted PostgreSQL\nSupabase / Neon / Render)]
+    DB[("Hosted PostgreSQL\nSupabase / Neon / Render")]
     Storage["Persistent Storage\n(Disk Volume / S3 / Supabase)"]
 
     Browser -->|HTTPS Request| Vercel
